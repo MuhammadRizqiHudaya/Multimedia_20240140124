@@ -1,0 +1,190 @@
+/* ===========================
+   SAWIT THEME — StyleCH5.css (Versi Sederhana)
+   =========================== */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #fdf6e3; /* Warna krem dasar */
+  font-family: 'Lato', sans-serif;
+  color: #1a3a1a;
+}
+
+/* ── HEADER ── */
+header {
+  background-color: #2d6a2d; /* Hijau daun solid */
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+  border-bottom: 5px solid #c8921a;
+}
+
+header h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 48px;
+  color: #f0b842;
+  margin-bottom: 10px;
+}
+
+.tagline {
+  font-style: italic;
+  font-size: 18px;
+}
+
+/* Daun dibuat sejajar biasa, tanpa animasi melayang */
+.leaf {
+  display: inline-block;
+  font-size: 30px;
+  margin: 0 10px;
+}
+
+/* ── MAIN ── */
+main {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 30px;
+  border-left: 5px solid #c8921a;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.1); /* Bayangan simpel */
+}
+
+/* ── H2 HEADINGS ── */
+h2 {
+  font-family: 'Playfair Display', serif;
+  background-color: #5a9e3a;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  display: inline-block;
+}
+
+hr {
+  border: 1px solid #e0e0e0;
+  margin-bottom: 20px;
+}
+
+/* ── MEDIA WRAPPER ── */
+.media-wrapper {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+/* ── IFRAME (YouTube) ── */
+iframe {
+  max-width: 100%;
+  border: 2px solid #5a9e3a;
+  border-radius: 8px;
+}
+
+/* ── INFO BUTTON ── */
+button#btnVideo {
+  background-color: #2d6a2d;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button#btnVideo:hover {
+  background-color: #1a3a1a;
+}
+
+/* ── AUDIO CARD ── */
+.audio-card {
+  background-color: #2d6a2d;
+  border-radius: 10px;
+  padding: 20px;
+  color: white;
+  display: inline-block;
+  width: 80%;
+  max-width: 400px;
+}
+
+.audio-icon {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.audio-card p {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+audio {
+  width: 100%;
+}
+
+/* ── GALLERY ── */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.gallery-item {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+  width: 45%; /* Menjadikan gambar 2 kolom */
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.gallery-label {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #2d6a2d;
+}
+
+/* ── CAPTION ── */
+.media-caption {
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+  font-style: italic;
+}
+
+/* ── FOOTER ── */
+footer {
+  background-color: #1a3a1a;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+/* ── RESPONSIVE BROWSER HP ── */
+@media (max-width: 600px) {
+  .gallery-item {
+    width: 100%; /* Menjadikan gambar 1 kolom di HP */
+  }
+  header h1 {
+    font-size: 36px;
+  }
+}
